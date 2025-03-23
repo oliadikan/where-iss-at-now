@@ -7,7 +7,7 @@ import {setTimeout} from "timers/promises";
 const app = express();
 const port = process.env.PORT || 3003;
 //const port = 3003;
-const apiKey = "AIzaSyByKtLiRu0Q_uJpMWm5hsjtHVldFrOn53o";
+const apiKey = process.env.API_KEY;
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
