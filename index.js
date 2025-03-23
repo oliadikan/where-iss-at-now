@@ -1,13 +1,3 @@
-// + SET UP ALL NEEDED PACKAGES - LOOK AT PREVIOUS PACKAGE JSONS
-// + Footer! ODPurrs?..
-// + Pretty font title "Where is the ISS at NOW?" - add link to ISS
-// + Question mark pic on enter(?..) Otherwise Google maps overlay?..
-// + Pretty button "I want to know!", click triggers sound and api request 
-// + -> put coordinates to google maps
-// + Keep the chosen color pallette
-// Controls, Click events, Relative sizes
-// Host on my GitHub
-
 import express from "express";
 import axios from "axios";
 import {setTimeout} from "timers/promises";
@@ -15,7 +5,8 @@ import {setTimeout} from "timers/promises";
 
 
 const app = express();
-const port = 3003;
+const port = process.env.PORT || 3003;
+//const port = 3003;
 const apiKey = "AIzaSyByKtLiRu0Q_uJpMWm5hsjtHVldFrOn53o";
 
 app.use(express.static("public"));
