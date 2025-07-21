@@ -68,6 +68,11 @@ button:hover {
     /*align-content: center;*/
 }
 
+#googleMap {
+    display: flex;
+    width: 80vw;
+}
+
 footer {
     position: fixed;
     left: 0;
@@ -157,35 +162,42 @@ footer {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
+/* mobile?.. */
 
 @media (max-width: 480px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  
   #googleMap {
-    display: flex;
-    width: 80vw;
-    height: 35vh;
+    height: 60vh;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-    #googleMap {
-    display: flex;
-    width: 80vw;
-    height: 55vh;
+/* tablet?.. */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    height: 90vh;
+  }
+  
+  #googleMap {
+    height: 70vh;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1920px) {
+/* laptop?.. */
+
+@media (min-width: 1025px) and (max-width: 1920px) {
   #googleMap {
-    display: flex;
-    width: 80vw;
     height: 50vh;
   }
 }
 
+/* desktop?.. */
+
 @media (min-width: 1921px) {
   #googleMap {
-    display: flex;
-    width: 80vw;
     height: 70vh;
   }  
 }
