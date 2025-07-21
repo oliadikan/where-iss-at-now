@@ -62,16 +62,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 85vh;
+    height: 80vh;
     margin-top: 100px;
     align-items: center;
     /*align-content: center;*/
-}
-
-#googleMap {
-    display: flex;
-    width: 80vw;
-    height: 45vh;
 }
 
 footer {
@@ -162,3 +156,37 @@ footer {
 .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
+
+
+@media (max-width: 480px) {
+  #googleMap {
+    display: flex;
+    width: 80vw;
+    height: 35vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #googleMap {
+    display: flex;
+    width: 80vw;
+    height: 55vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+  #googleMap {
+    display: flex;
+    width: 80vw;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1921px) {
+  #googleMap {
+    display: flex;
+    width: 80vw;
+    height: 70vh;
+  }  
+}
+
